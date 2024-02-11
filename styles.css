@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background:#080808; /* Grey background */
+    color: #fff; /* Dark grey text color */
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 40px;
+    text-decoration: none;
+     /* Dark grey text color */
+}
+
+.logo span {
+    color: #ff004f; /* Red */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Dark grey text color */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f; /* Red underline */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+    display: flex;
+    align-items: center; /* Align content vertically */
+}
+
+.profile-image {
+    width: 300px; /* Adjust image width as needed */
+    height: 300px; /* Adjust image height as needed */
+    border-radius: 50%; /* Make image circular */
+    margin-left: 500px; /* Add space between image and text */
+ 
+}
+
+
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f; /* Red */
+}
+
+/* About Section */
+#about {
+    padding: 80px 0;
+    color: #ababab; /* Dark grey text color */
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width:85%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff; /* Dark grey text color */
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    /* Dark grey text color */
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f; /* Red underline */
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff004f; /* Red */
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Contact Section */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-left p {
+    margin-top: 40px;
+}
+
+.contact-left p i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 40px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #666; /* Dark grey text color */
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f; /* Red */
+    transform: translate(-5px);
+}

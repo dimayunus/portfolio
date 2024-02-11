@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/73d6d8577d.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <!--<img src="/images/logo.png" class="logo"> --> 
+               <p class="logo"><span>D</span>ima.</p>
+         
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>     
+            </ul>
+        </nav>
+        <div class="header-text">
+            
+            <div class="header-text-content">
+                <p>Student Developer</p>
+                <h1>Hi, I'm <span>Dima</span></h1>
+            </div>
+            <img src="images/me.jpeg" alt="" class="profile-image">
+        </div>
+        
+        </div>
+    </div> 
+<!----about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm deeply captivated by the dynamic intersection of technology and innovation, with a keen interest in artificial intelligence, web development, and data science. 
+                        I'm enthusiastic about applying my knowledge and skills to solve real-world problems and contribute meaningfully to the field.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>HTML,CSS,JavaScript </li>
+                            <li><span>C</span><br></li>
+                            <li><span>JAVA</span><br></li>
+                            <li><span>Python</span><br></li>
+                            <li><span>MySQL</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br>Microsoft Asure AI Fundamentals</li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>SCMS School of Engineering andTechnology</li>
+                            <li><span>2018-2020</span><br>Noble Public School</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact section---->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>dimayunusp@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+                <div class="contact-right"></div>
+                
+            </div>
+        </div>
+    </div>
+    <!--JS files-->
+    <script src="script.js">
+     
+    </script>
+</body>
+</html>
